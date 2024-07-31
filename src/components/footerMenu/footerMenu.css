@@ -1,10 +1,10 @@
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#444446da;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#b6b6b6;
 }
 .site-footer hr
 {
@@ -20,12 +20,12 @@
   color:#fff;
   font-size:16px;
   text-transform:uppercase;
-  /* margin-top:5px; */
+  margin-top:5px;
   letter-spacing:2px
 }
 .site-footer a
 {
-  color:#737373;
+  color:#a19f9f;
 }
 .Link{
     color:#fff;
@@ -47,7 +47,7 @@
 }
 .footer-links a
 {
-  color:#737373
+  color:#969494
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -70,7 +70,7 @@
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#252527
 }
 .copyright-text
 {
@@ -164,4 +164,9 @@
     margin-right:0;
     font-weight:600
   }
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
 }

@@ -4,8 +4,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #fcfcfc;
+  background-color: rgba(247, 204, 124, 0.5)
+
 }
+/* .background {
+ 
+} */
 
 .container {
   max-width: 1100px;
@@ -19,8 +23,9 @@ body {
 
 .navbar {
   height: 60px;
-  background-color: #fef7e5;
+  background-color: rgb(20, 54, 47);
   position: relative;
+  text-decoration-color: #fef7e5;
 }
 
 .App-logo {
@@ -48,12 +53,11 @@ body {
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
-  color: #2f234f;
+  color: #eae8ee;
   text-decoration: none;
 }
-
 .nav-elements ul a.active {
-  color: #574c4c;
+  color: #0a0909;
   font-weight: 500;
   position: relative;
 }
@@ -84,7 +88,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: rgb(20, 54, 47);
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;

@@ -24,27 +24,28 @@ return (
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">HOME</NavLink>
             </li>
             <li>
-              <NavLink to="/about">AboutUS</NavLink>
+              <NavLink to="/about">ABOUT US</NavLink>
             </li>
             <li>
-              <NavLink to="/service">Services</NavLink>
+              <NavLink to="/service">SERVICES</NavLink>
             </li>
             <li>
-              <NavLink to="/practice">Areas of Practice</NavLink>
+              <NavLink to="/practice">AREA OF PRACTICE</NavLink>
             </li>
             <li>
-              <NavLink to="/gallery">Gallery</NavLink>
+              <NavLink to="/gallery">GALLERY</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">ContactUs</NavLink>
+              <NavLink to="/contact">CONTACT US</NavLink>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
   );
 }
 
