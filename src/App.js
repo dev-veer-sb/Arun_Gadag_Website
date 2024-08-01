@@ -4,10 +4,7 @@ import React from "react";
 import {
     BrowserRouter as Router,
     Routes,
-    Route,
-    Link,
-    useNavigate,
-    Outlet,
+    Route
 } from "react-router-dom";
 import Home from "./components/homePage";
 import About from "./components/aboutPage";
@@ -17,9 +14,11 @@ import Footer from "./components/footerMenu";
 import Services from "./components/servicesPage";
 import Practice from "./components/practicePage";
 import Gallery from "./components/galleryPage";
+import './App.css'
 
 function App() {
     return (
+      <div className="background">
         <Router>
           <Navigation/>
             <Routes>
@@ -33,6 +32,7 @@ function App() {
             </Routes>
             <Footer/>
         </Router>
+        </div>
     );
 }
 

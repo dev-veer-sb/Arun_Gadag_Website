@@ -1,0 +1,25 @@
+
+
+.about-advocate {
+    background-color: rgba(160, 154, 154, 0.5); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #000000; /* Text color */
+    text-align: left; /* Align text to the left for better readability */
+    z-index: -1;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.about-advocate h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.about-advocate p {
+    font-size: 1.2rem; /* Adjust as needed */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space between paragraphs */
+}

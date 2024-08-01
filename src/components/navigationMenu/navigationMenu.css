@@ -4,8 +4,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #fcfcfc;
+  background-color: rgba(248, 224, 180, 0.418)
+
 }
+/* .background {
+ 
+} */
 
 .container {
   max-width: 1100px;
@@ -19,13 +23,15 @@ body {
 
 .navbar {
   height: 60px;
-  background-color: #fef7e5;
+  background-color: rgb(20, 54, 47);
   position: relative;
+  text-decoration-color: #f1f0ed;
 }
 
 .App-logo {
-  height: 7vmin;
+  height: 9vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 .menu-icon {
@@ -48,12 +54,12 @@ body {
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
-  color: #2f234f;
+  color: #ffffff;
   text-decoration: none;
 }
-
 .nav-elements ul a.active {
-  color: #574c4c;
+  color: #ba952f;
+  font-size: 20px;
   font-weight: 500;
   position: relative;
 }
@@ -84,7 +90,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: rgb(20, 54, 47);
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
