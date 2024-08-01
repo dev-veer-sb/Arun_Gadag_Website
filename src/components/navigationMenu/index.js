@@ -1,8 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../../logo.svg';
 import Hamburger from '../../commoncomp/Hamburger';
 import './navigationMenu.css'
+import logo from '../../images/AG LOGO.jpg';
+
 
 const Navigation = () => {
 const [showNavbar, setShowNavbar] = React.useState(false);
@@ -15,7 +16,7 @@ return (
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} alt="Logo" className="App-logo" />
 
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>

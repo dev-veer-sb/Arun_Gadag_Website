@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: rgba(247, 204, 124, 0.5)
+  background-color: rgba(248, 224, 180, 0.418)
 
 }
 /* .background {
@@ -25,12 +25,13 @@ body {
   height: 60px;
   background-color: rgb(20, 54, 47);
   position: relative;
-  text-decoration-color: #fef7e5;
+  text-decoration-color: #f1f0ed;
 }
 
 .App-logo {
-  height: 7vmin;
+  height: 9vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 .menu-icon {
@@ -53,11 +54,12 @@ body {
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
-  color: #eae8ee;
+  color: #ffffff;
   text-decoration: none;
 }
 .nav-elements ul a.active {
-  color: #0a0909;
+  color: #ba952f;
+  font-size: 20px;
   font-weight: 500;
   position: relative;
 }

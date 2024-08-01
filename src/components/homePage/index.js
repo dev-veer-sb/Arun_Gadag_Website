@@ -1,14 +1,18 @@
 import React from 'react'
 import './homePage.css'
-
+import MainContentInAllPage from '../../commoncomp/Hamburger/headLinesWithLogo'
+import iggg from '../../images/ArunG.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/gallery');
+  };
   return (
     <div >
          <div>
-            <div className="content">
-                <h1 className="centered-text">ARUN GADAG ADVOCATES</h1>
-            </div>
+            <MainContentInAllPage/>
             <section className="about-advocate">
                     <h2>About Advocate</h2>
                     <p>
@@ -38,6 +42,35 @@ const Home = () => {
                         Morbi dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
                         eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
                     </p>
+                  </section>
+                  
+                  <section className="about-advocate">
+                  <h2>Gallery</h2>
+                  <div >
+                    <div style={{display:'flex'}}>
+                  {[1,2,3,4].map(()=>{
+                    return(
+                      <div className="card">
+                    
+                      <img src={iggg} alt="veer"></img>
+                      </div>
+                    )
+                    })}
+                    </div>
+                    <div style={{textAlign:'center'}}>
+                    <button style={{
+                      height:'50%',
+                      width:'10%',
+                      borderRadius:'5%',
+                      background:'gray'
+
+                    }}
+                    onClick={()=>{
+                      handleClick() 
+                    }}
+                    >View More</button>
+                    </div>
+                    </div>
                   </section>
 
         </div>

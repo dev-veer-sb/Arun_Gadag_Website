@@ -1,0 +1,22 @@
+.content{
+    text-align: center;
+    font-size: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color:#ba952f;
+    text-shadow:
+    1px 1px 1px rgb(15, 8, 8),
+    2px 2px 1px rgb(34, 23, 23);
+    margin-top: 2%;
+    margin-bottom: 11%;
+}
+.content:hover {
+    transform: scale(1.0); /* Slightly increase size on hover */
+    color:#e9bf4b; /* Change text color on hover */
+}
+.image{
+border-radius: 50%;
+height: 12%;
+width: 12%;
+color: rgb(235, 235, 179);
+}
