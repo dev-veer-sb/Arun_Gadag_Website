@@ -15,11 +15,13 @@ import Services from "./components/servicesPage";
 import Practice from "./components/practicePage";
 import Gallery from "./components/galleryPage";
 import './App.css'
+import ScrollTop from "./components/scrollToTop";
 
 function App() {
     return (
       <div className="background">
         <Router>
+          <ScrollTop/>
           <Navigation/>
             <Routes>
                 <Route path="/" element={<Home />} />
