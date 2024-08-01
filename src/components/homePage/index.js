@@ -1,7 +1,12 @@
 import React from 'react'
 import './homePage.css'
 import MainContentInAllPage from '../../commoncomp/Hamburger/headLinesWithLogo'
-import iggg from '../../images/ArunG.jpg';
+import law1 from '../../images/law1.jpg';
+import law2 from '../../images/law2.jpg';
+
+import law3 from '../../images/law3.jpg';
+import law4 from '../../images/law5.jpg';
+
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -48,23 +53,18 @@ const Home = () => {
                   <h2>Gallery</h2>
                   <div >
                     <div style={{display:'flex'}}>
-                  {[1,2,3,4].map(()=>{
+                  {[law1,law2,law4,law3].map((item)=>{
                     return(
                       <div className="card">
                     
-                      <img src={iggg} alt="veer"></img>
+                      <img src={item} alt="veer"></img>
                       </div>
                     )
                     })}
                     </div>
                     <div style={{textAlign:'center'}}>
-                    <button style={{
-                      height:'50%',
-                      width:'10%',
-                      borderRadius:'5%',
-                      background:'gray'
-
-                    }}
+                    <button 
+                   className="button" 
                     onClick={()=>{
                       handleClick() 
                     }}

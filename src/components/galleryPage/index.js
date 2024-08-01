@@ -1,13 +1,37 @@
 import React from 'react'
 import MainContentInAllPage from '../../commoncomp/Hamburger/headLinesWithLogo'
 import ImageGallery from "react-image-gallery";
-import iggg from '../../images/ArunG.jpg';  
+import iggg from '../../images/ArunG.jpg'; 
+import law1 from '../../images/law1.jpg'; 
+import law2 from '../../images/law2.jpg'; 
+import law3 from '../../images/law3.jpg'; 
+import law5 from '../../images/law5.jpg';  
+
+
 
 const Gallery = () => {
 
 
 
 const images = [
+  
+  {
+    original: law1,
+    thumbnail: law1,
+  },
+  {
+    original: law2,
+    thumbnail: law2,
+  },
+  {
+    original: law3,
+    thumbnail: law3,
+  },
+
+  {
+    original: law5,
+    thumbnail: law5,
+  },
   {
     original: iggg,
     thumbnail: iggg,
