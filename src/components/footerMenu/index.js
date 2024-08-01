@@ -41,10 +41,10 @@ const Footer = () => {
       <div className="row">
         <div className="col-md-4 col-sm-6 col-xs-12">
           <ul className="social-icons">
-            <li><a className="facebook" href="www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a className="twitter" href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-            <li><a className="dribbble" href="www.dribbble.com"><i class="fa fa-dribbble"></i></a></li>
-            <li><a className="linkedin" href="www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>   
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-dribbble"></i></li>
+            <li><i class="fa fa-linkedin"></i></li>   
           </ul>
         </div>
       </div>
