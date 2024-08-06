@@ -48,6 +48,49 @@ const Home = () => {
                         eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
                     </p>
                   </section>
+
+                  <section className="about-services">
+                  <p>
+                <ul>
+                      <li><b>Legal Consultation</b>
+                  <ul>
+                      <li>Providing advice on legal matters</li>
+                      <li>Explaining rights and obligations under the law</li>
+                      <li>Offering guidance on legal procedures</li>
+                  </ul>
+                     </li>
+                     <li><b>Litigation</b>
+                       <ul>
+                        <li>Representing clients in court</li>
+                        <li>Preparing and filing legal documents</li>
+                       <li>Presenting evidence and arguments in legal proceedings</li>
+                      </ul>
+                    </li>
+                    <li><b>Contract Drafting and Review</b>
+                     <ul>
+                      <li>Drafting legal contracts and agreements</li>
+                     <li>Reviewing and advising on the terms of contracts</li>
+                     <li>Negotiating contract terms on behalf of clients</li>
+                     </ul>
+                    </li>
+                    <li><b>Alternative Dispute Resolution (ADR)</b>
+                      <ul>
+                       <li>Mediating disputes between parties</li>
+                       <li>Representing clients in arbitration proceedings</li>
+                       <li>Facilitating negotiations to reach settlements</li>
+                     </ul>
+                     </li>
+                    <li><b>Corporate and Commercial Law</b>
+                     <ul>
+                       <li>Advising on business formation and structuring</li>
+                      <li>Assisting with mergers and acquisitions</li>
+                      <li>Providing counsel on compliance with corporate laws and regulations</li>
+                     </ul>
+                      </li>
+                 </ul>
+
+                    </p>
+                  </section>
                   
                   <section className="about-advocate">
                   <h2>Gallery</h2>
