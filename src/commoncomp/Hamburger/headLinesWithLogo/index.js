@@ -1,6 +1,6 @@
 import React from 'react'
 import './headLinesWithLogo.css';
-import image from '../../../images/AG LOGO.jpg'
+import image from '../../../images/download.png'
 
 const MainContentInAllPage = () => {
   return (

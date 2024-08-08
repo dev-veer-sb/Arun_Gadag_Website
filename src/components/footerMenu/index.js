@@ -38,16 +38,7 @@ const Footer = () => {
       <hr/>
     </div>
     <div >
-      <div className="row">
-        <div className="col-md-4 col-sm-6 col-xs-12">
-          <ul className="social-icons">
-            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            <li><i class="fa fa-twitter"></i></li>
-            <li><i class="fa fa-dribbble"></i></li>
-            <li><i class="fa fa-linkedin"></i></li>   
-          </ul>
-        </div>
-      </div>
+    
     </div>
 </footer>
   )

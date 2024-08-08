@@ -12,11 +12,11 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('./images/bgimg.jpg'); /* Adjust the path to your image file */
+  background-image: url('./images/background1.webp'); /* Adjust the path to your image file */
   background-size: cover;
   background-position: center;
   background-color:  rgba(255, 255, 255, 0.685);
-  z-index: -2; /* Ensure the background stays behind content */
+  z-index: -1; /* Ensure the background stays behind content */
 }
 
 .background::after {
@@ -31,7 +31,7 @@
 }
 
 .about-advocate {
-  background-color: rgba(241, 240, 238, 0.87); /* Semi-transparent white background */
+  background-color: rgba(238, 255, 238, 0.87); /* Semi-transparent white background */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
