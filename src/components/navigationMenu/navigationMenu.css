@@ -23,7 +23,7 @@ body {
 
 .navbar {
   height: 60px;
-  background-color: #14362f;
+  background-color: #B3DAB3;
   position: relative;
   text-decoration-color: #f1f0ed;
 }
@@ -31,7 +31,7 @@ body {
 .App-logo {
   height: 9vmin;
   pointer-events: none;
-  border-radius: 50%;
+ 
 }
 
 .menu-icon {
@@ -53,12 +53,13 @@ body {
 
 .nav-elements ul a {
   font-size: 16px;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: none;
+  font-weight: 600;
+  color: #0a0a0a;
+  text-decoration: solid;
+  
 }
 .nav-elements ul a.active {
-  color: #ba952f;
+  color: #336666;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -90,7 +91,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: rgb(20, 54, 47);
+    background-color:#B3DAB3;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Hamburger from '../../commoncomp/Hamburger';
 import './navigationMenu.css'
-import logo from '../../images/AG LOGO.jpg';
+import logo from '../../images/download.png';
 
 
 const Navigation = () => {
@@ -25,22 +25,34 @@ return (
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
+              <b>
               <NavLink to="/">HOME</NavLink>
+              </b>
             </li>
             <li>
+            <b>
               <NavLink to="/about">ABOUT US</NavLink>
+              </b>
             </li>
             <li>
+              <b>
               <NavLink to="/service">SERVICES</NavLink>
+              </b>
             </li>
             <li>
+              <b>
               <NavLink to="/practice">AREA OF PRACTICE</NavLink>
+              </b>
             </li>
             <li>
+              <b>
               <NavLink to="/gallery">GALLERY</NavLink>
+              </b>
             </li>
             <li>
+              <b>
               <NavLink to="/contact">CONTACT US</NavLink>
+              </b>
             </li>
           </ul>
         </div>

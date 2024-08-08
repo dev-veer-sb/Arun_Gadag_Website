@@ -55,7 +55,7 @@ const Contact = () => {
           {cardData.map((card, index) => (
             <div className="card" key={index}>
               <div className="iconDiv">
-                <img src={card.image} alt="icon" className="icons" />
+                <img src={card.image} alt="icon" className="icons" style={{width:'60%'}}/>
               </div>
 
               <div className="card-body">
