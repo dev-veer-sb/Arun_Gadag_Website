@@ -14,8 +14,8 @@ const Contact = () => {
   // Define an array of objects with the unique data for each card
   const cardData = [
     {
-      title: 'Location',
-      location: `Arun A. Gadag, Advocate
+      title: <b>Location</b>,
+      Address: `Arun A. Gadag, Advocate
       #14. SNS Plaza.
       No. 45. 4th Floor.
       Kumara Krupa Road.
@@ -23,12 +23,12 @@ const Contact = () => {
         image:locationImage,
     },
     {
-      title: 'Gmail',
-      mail: 'arungadagassociates@gmail.com',
+      title: <b>Gmail</b>,
+      mail: <a href="mailto:arungadagassociates@gmail.com">arungadagassociates@gmail.com</a>,
  image:mailImage,
     },
     {
-      title: 'Contact Us',
+      title: <b>Contact Us</b>,
       office: '08040900228',
       mobile: '9945482525',
    image:contactImage,
@@ -62,19 +62,19 @@ const Contact = () => {
               <div>{card.title}</div>
                 {card.office && (
                   <div>
-                    office: {card.office}
+                    Office : {card.office}
                     <br />
-                    mobile: {card.mobile}
+                    Mobile : {card.mobile}
                   </div>
                 )}
                 {card.mail && (
                   <div>
-                    email: {card.mail}
+                    Email : {card.mail}
                   </div>
                 )}
-                {card.location && (
+                {card.Address && (
                   <div>
-                    Location: {card.location}
+                    Address : {card.Address}
                   </div>
                 )}
               </div>
