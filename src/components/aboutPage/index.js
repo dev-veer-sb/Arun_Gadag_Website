@@ -8,33 +8,14 @@ const About = () => {
       <section className="about-advocate">
                     <h2>About US</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec auctor, nisl eget consectetur sagittis, nisl urna consectetur elit, eget consectetur nisi nisl eget nisi. 
-                        Suspendisse potenti. Quisque at condimentum dolor. Etiam bibendum, urna eu vehicula luctus, justo erat venenatis justo, 
-                        eget venenatis lacus ligula non odio. Duis ut tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Morbi dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
-                        eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
+                    <p>We (the “Firm”) pride ourselves in providing efficient, commercially sound and result-oriented solutions to Clients.  We value the trust and beliefs vested in us by our Clients and professional contacts and provide a dedicated service with an honest and direct approach in all our dealings. </p>
+                    <p>We are well equipped to handle client issues promptly and effectively. We offer Client’s an international capability with a focus on Indian law and jurisdiction.  Truly committed and global in attitude and service offering, we work together with international law firms, accountancy practitioners and a multiplicity of professional advisors to provide clients a complete legal solution.</p> 
+                    While The Firm is primarily based out of Bangalore, we comprises a good team of professionals across the state of Karnataka, with a the Firm has fully functional offices at Bengaluru, Mumbai & New Delhi. All the associates of the Firm strictly adhere to the Firm’s client satisfaction rules to ensure that amongst other things, quality and response time of the highest standards are maintained and client satisfaction is optimized
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec auctor, nisl eget consectetur sagittis, nisl urna consectetur elit, eget consectetur nisi nisl eget nisi. 
-                        Suspendisse potenti. Quisque at condimentum dolor. Etiam bibendum, urna eu vehicula luctus, justo erat venenatis justo, 
-                        eget venenatis lacus ligula non odio. Duis ut tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Morbi dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
-                        eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
-                    </p>
+                   
                   
                 </section>
-                <section className="about-advocate">
-                <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec auctor, nisl eget consectetur sagittis, nisl urna consectetur elit, eget consectetur nisi nisl eget nisi. 
-                        Suspendisse potenti. Quisque at condimentum dolor. Etiam bibendum, urna eu vehicula luctus, justo erat venenatis justo, 
-                        eget venenatis lacus ligula non odio. Duis ut tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Morbi dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
-                        eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
-                    </p>
-                  </section>
+              
       </div>
   )
 }
