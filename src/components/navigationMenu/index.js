@@ -26,7 +26,7 @@ return (
           <ul>
             <li>
               <b>
-              <NavLink to="/">HOME</NavLink>
+              <NavLink to="/home">HOME</NavLink>
               </b>
             </li>
             <li>

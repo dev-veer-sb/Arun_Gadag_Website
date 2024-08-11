@@ -39,7 +39,7 @@
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
 }
 .footer-links li
 {
@@ -169,4 +169,5 @@
 .row{
   display: flex;
   justify-content: space-around;
+  margin-left: 20%;
 }

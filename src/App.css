@@ -12,12 +12,15 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('./images/background1.webp'); /* Adjust the path to your image file */
+  background-image: url('./images/AGGIF.gif'); /* Adjust the path to your image file */
   background-size: cover;
   background-position: center;
-  background-color:  rgba(255, 255, 255, 0.685);
+  background-color:  rgba(255, 255, 255, 0);
   z-index: -1; /* Ensure the background stays behind content */
 }
+
+
+
 
 .background::after {
   content: '';
@@ -26,7 +29,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color:  rgba(140, 172, 165, 0.13); /* Semi-transparent white overlay */
+  background-color:  rgba(140, 172, 165, 0.144); /* Semi-transparent white overlay */
   z-index: -1; /* Ensure the overlay stays behind content but in front of the background image */
 }
 
