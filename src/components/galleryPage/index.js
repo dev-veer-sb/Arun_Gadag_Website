@@ -49,13 +49,10 @@ const images = [
     <div>
     <MainContentInAllPage/>
     <section className="about-advocate">
-    <h2>About Gallery</h2>
+    <h2>Gallery</h2>
     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec auctor, nisl eget consectetur sagittis, nisl urna consectetur elit, eget consectetur nisi nisl eget nisi. 
-                         dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
-                        eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
-                    </p>
+    Explore our gallery to see highlights of our legal practice in action. Here, you’ll find images and snapshots from various events, legal seminars, and community engagements that showcase our commitment to legal excellence and client advocacy. This gallery reflects our dedication to providing high-quality legal services and our active involvement in the legal community.
+                       </p>
     </section>
     <section className="about-advocate">
     <ImageGallery items={images} />;

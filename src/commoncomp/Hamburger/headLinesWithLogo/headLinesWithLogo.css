@@ -2,20 +2,23 @@
     text-align: center;
     font-size: 25px;
     font-family: 'Cursive';
-    font-weight: bold;
-    color:#374638;
+    color:#000000;
     text-shadow:
     1px 1px 1px rgb(15, 8, 8),
     2px 2px 1px rgb(34, 23, 23);
     margin-top: 2%;
-    margin-bottom: 11%;
+    margin-bottom: 7%;
 }
 .content:hover {
     transform: scale(1.0); /* Slightly increase size on hover */
-    color:#626662; /* Change text color on hover */
+    color:#303030; /* Change text color on hover */
+}
+h2{
+    margin: 0;
+
 }
 .image{
-height: 12%;
-width: 12%;
+height: 10%;
+width: 10%;
 color: rgb(235, 235, 179);
 }

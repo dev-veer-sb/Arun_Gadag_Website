@@ -4,7 +4,7 @@ import React from "react";
 import {
     BrowserRouter as Router,
     Routes,
-    Route
+    Route,Navigate 
 } from "react-router-dom";
 import Home from "./components/homePage";
 import About from "./components/aboutPage";
@@ -24,7 +24,8 @@ function App() {
           <ScrollTop/>
           <Navigation/>
             <Routes>
-                <Route path="/" element={<Home />} />
+            <Route path="/" element={<Navigate to="/home" />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />}/>
                 <Route path="/service" element={<Services />} />
                 <Route path="/practice" element={<Practice />} />

@@ -51,3 +51,90 @@
   .iconDiv{
     text-align: center;
   }
+  .contactGif{
+    height: 100%;
+    width: 80%;
+  }
+  .contactGifdiv{
+    text-align: end;
+    width: 100%;
+
+  }
+  .contactContentdiv{
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .bodyDiv {
+    font-family: 'Arial', sans-serif;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.containerContact {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  .containerContact {
+    padding: 10%; /* Reduce padding on smaller screens */
+    max-height: 30vh; /* Remove the max-width for better responsiveness */
+    border-radius: 5px; 
+    overflow: scroll;/* Slightly smaller border radius on mobile */
+  }
+}
+
+h1 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #88b988;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bef0be;
+}
