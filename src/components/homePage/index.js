@@ -73,7 +73,7 @@ Our dedication to excellence drives us to continuously improve our legal practic
                 return (
                   <div className="card">
 
-                    <img src={item} alt="veer"></img>
+                    <img src={item} alt="veer" className='homePageImg'></img>
                   </div>
                 )
               })}

@@ -1,0 +1,29 @@
+.serviceBody{
+    margin: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 10px; /* Space between cards */
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .serviceBody{
+        margin: 4%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Creates 3 equal columns */
+        gap: 15px; /* Space between cards */
+        width: 98%;
+        max-width: 1200px;
+    }
+}
+.serviceContainers {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0.1,0,0,0.1);
+    width: 90%;
+    text-align: center;
+    text-decoration: solid;
+}
+

@@ -3,10 +3,14 @@
     align-items: flex-start;
       justify-content: center;
   }
+  .cardDiv {
+    display: flex;
+    }
+
   
   .card {
     background: #fff;
-    width: 24em;
+    width: 30%;
     border-radius: 0.6em;
     margin: 1em;
     overflow: hidden;
@@ -21,11 +25,7 @@
     box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
   }
   
-  .card img  {
-    align-items: center;
-    width: 100%;
-    object-fit: cover;
-  }
+
 
 
   
@@ -47,6 +47,10 @@
   }
   .icons{
     border-radius: 50%;
+    width: 30%;
+    align-items: center;
+    /* width: 100%; */
+    object-fit: cover;
   }
   .iconDiv{
     text-align: center;
@@ -92,6 +96,22 @@
     border-radius: 5px; 
     overflow: scroll;/* Slightly smaller border radius on mobile */
   }
+  .cardDiv {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; 
+  }
+  .card {
+    background: #fff;
+    width: 90%;
+    border-radius: 0.6em;
+    margin: 1em;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+    transition: all ease 200ms;
+    align-items: center;
+  }
 }
 
 h1 {
@@ -116,17 +136,17 @@ input, textarea {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #f5f5f5;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: #daf8da;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 input:focus, textarea:focus {
     outline: none;
-    background-color: #e0e0e0;
+    background-color: #ebf5eb;
 }
 
 button {
-    background-color: #88b988;
+    background-color: #14362f;
     color: white;
     padding: 12px 30px;
     font-size: 18px;

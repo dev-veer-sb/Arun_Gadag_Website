@@ -59,3 +59,13 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.homePageImg{
+    
+        /* border-radius: 50%; */
+        /* width: 30%; */
+        align-items: center;
+        width: 100%;
+        object-fit: cover;
+      
+}
