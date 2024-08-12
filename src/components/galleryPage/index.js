@@ -6,7 +6,7 @@ import law1 from '../../images/law1.jpg';
 import law2 from '../../images/law2.jpg'; 
 import law3 from '../../images/law3.jpg'; 
 import law5 from '../../images/law5.jpg';  
-
+import './galleryPage.css'
 
 
 const Gallery = () => {
@@ -55,8 +55,17 @@ const images = [
                        </p>
     </section>
     <section className="about-advocate">
-    <ImageGallery items={images} />;
+      <div >
+    <ImageGallery items={images}  autoPlay={true} thumbnailPosition={'top'} showFullscreenButton={false} showPlayButton={false} disableKeyDown={true} showIndex={true} disableThumbnailScroll={true} disableSwipe={true} showNav={false} />;
+    </div>
     </section>
+
+    <div className='galleryBody'>
+                {images.map((value)=>{
+                  return (<div className="galleryContainers">
+<img src={value.thumbnail} alt='img' className='imges'/>
+                </div>)})}
+                </div>
     </div>
   )
 }

@@ -1,42 +1,62 @@
 import React from 'react'
 import MainContentInAllPage from '../../commoncomp/Hamburger/headLinesWithLogo'
+import '../practicePage/practicePage.css';
 
 const Practice = () => {
+  const legalAreas = [
+    "Agricultural Law",
+    "Alternative Dispute Resolution",
+    "Appellate Tribunal",
+    "Arbitration",
+    "Banking Law",
+    "Business Law",
+    "Civil Litigation",
+    "Criminal Cases",
+    "Criminal Defamation",
+    "Commercial Court Cases",
+    "Civil Defamation",
+    "Constitutional Law",
+    "Consumer Law",
+    "Criminal Law",
+    "Environmental Law",
+    "Estate and Trust",
+    "Family Laws",
+    "General Practice",
+    "Insurance Laws",
+    "Joint Ventures",
+    "Labour Laws",
+    "Property Laws",
+    "Mediation",
+    "Mergers and Acquisitions",
+    "Motor Vehicle Law",
+    "Sexual Harassment",
+    "Trade",
+    "Wills and Probate",
+    "Companies Matters",
+    "Cases under Negotiable Instruments (NCLT)",
+    "Criminal Cases under IPC",
+    "Karnataka Appellate Tribunal",
+    "POCSO Cases"
+];
+
+
+
   return (
     <div>
       <MainContentInAllPage/>
       <section className="about-advocate">
                     <h2>About Area of practice</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec auctor, nisl eget consectetur sagittis, nisl urna consectetur elit, eget consectetur nisi nisl eget nisi. 
-                        Suspendisse potenti. Quisque at condimentum dolor. Etiam bibendum, urna eu vehicula luctus, justo erat venenatis justo, 
-                        eget venenatis lacus ligula non odio. Duis ut tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Morbi dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
-                        eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
-                    </p> 
+                    Our legal expertise spans across a broad spectrum of practice areas, ensuring comprehensive legal solutions tailored to your unique needs. Our commitment to excellence is reflected in every case we handle, from the initial consultation to the final resolution. </p> 
                 </section>
-                <section className="about-advocate">
-                    <h2>About Area of practice</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec auctor, nisl eget consectetur sagittis, nisl urna consectetur elit, eget consectetur nisi nisl eget nisi. 
-                        Suspendisse potenti. Quisque at condimentum dolor. Etiam bibendum, urna eu vehicula luctus, justo erat venenatis justo, 
-                        eget venenatis lacus ligula non odio. Duis ut tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Morbi dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
-                        eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
-                    </p> 
-                </section>
-                <section className="about-advocate">
-                <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec auctor, nisl eget consectetur sagittis, nisl urna consectetur elit, eget consectetur nisi nisl eget nisi. 
-                        Suspendisse potenti. Quisque at condimentum dolor. Etiam bibendum, urna eu vehicula luctus, justo erat venenatis justo, 
-                        eget venenatis lacus ligula non odio. Duis ut tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                        Morbi dictum nisi et enim consectetur, eget consectetur nisl interdum. Donec euismod, nisl eget consectetur ultricies, nisl urna vestibulum nisi, 
-                        eget vestibulum lacus nisl eget nisi. Curabitur euismod, nisl et ultricies lobortis, nisl turpis vestibulum nunc, et vestibulum nunc turpis eget urna.
-                    </p>
-                  </section>
+
+<div className='serviceBody'>
+                {legalAreas.map((value)=>{
+                  return (<div className="serviceContainers">
+{value}
+                </div>)})}
+                </div>
+              
       </div>
   )
 }

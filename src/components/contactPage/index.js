@@ -8,12 +8,54 @@ import contactImage from '../../images/contact.png';
 import locationImage from '../../images/location.png';
 import mailImage from '../../images/maillogo.png';
 import contactUs from '../../images/Contact Us.gif';
-
+import  { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 
 
 const Contact = () => {
   // Define an array of objects with the unique data for each card
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone:'',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceID = 'service_a4seqnw';
+    const templateID = 'template_pbxa894';
+    const userID = 'eyKCOlUyqnFTZJBPy';
+
+    emailjs.send(serviceID, templateID, formData, userID)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Your message has been sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          phone:'',
+          message: ''
+        });
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+        alert('Failed to send the message. Please try again.');
+      });
+  };
+
+
   const cardData = [
     {
       title: <b>Location</b>,
@@ -51,11 +93,11 @@ const Contact = () => {
 
       {/* Contact Cards Section */}
       <section className="about-advocate">
-        <div style={{ display: 'flex' }}>
+        <div className='cardDiv'>
           {cardData.map((card, index) => (
             <div className="card" key={index}>
               <div className="iconDiv">
-                <img src={card.image} alt="icon" className="icons" style={{width:'60%'}}/>
+                <img src={card.image} alt="icon" className="icons" />
               </div>
 
               <div className="card-body">
@@ -89,26 +131,27 @@ const Contact = () => {
 <div className='bodyDiv'>
     <div className="containerContact">
         <h1>Contact Us</h1>
-      <form action="https://fabform.io/f/{insert-form-id-here}" method="post"/>
+      <form onSubmit={handleSubmit}>
             <div className="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required/>
+                <input type="text" id="name" name="name"  value={formData.name}  onChange={handleChange} required/>
             </div>
             <div className="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required/>
+                <input type="email" id="email" name="email"  value={formData.email}  onChange={handleChange} required/>
             </div>
             <div className="form-group">
                 <label for="phone">Phone No:</label>
-                <input type="phone" id="phone" name="phone" required/>
+                <input type="phone" id="phone" name="phone"  value={formData.phone}  onChange={handleChange} required/>
             </div>
             <div className="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message"  value={formData.message}  onChange={handleChange} required ></textarea>
             </div>
             <div className="form-group">
                 <button type="submit">Submit</button>
             </div>
+            </form>
      </div>
 </div>
           </div>
