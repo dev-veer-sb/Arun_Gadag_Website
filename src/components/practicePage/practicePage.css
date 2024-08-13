@@ -4,7 +4,8 @@
     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
     gap: 10px; /* Space between cards */
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {

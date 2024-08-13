@@ -16,6 +16,9 @@ import Practice from "./components/practicePage";
 import Gallery from "./components/galleryPage";
 import './App.css'
 import ScrollTop from "./components/scrollToTop";
+import Litigation from "./components/litigationPage";
+import NonLitigation from "./components/nonLitigationPage";
+import RealEstate from "./components/realEstatePage";
 
 function App() {
     return (
@@ -31,6 +34,10 @@ function App() {
                 <Route path="/practice" element={<Practice />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/litigation" element={<Litigation/>} />
+                <Route path="/nonlitigation" element={<NonLitigation />} />
+                <Route path="/realestate" element={<RealEstate />} />
+
 
             </Routes>
             <Footer/>
