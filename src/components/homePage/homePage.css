@@ -60,10 +60,21 @@
     cursor: pointer;
 }
 
+.partner-img{
+   padding: 2%; 
+   object-fit: cover;
+   width: 30%;
+   text-align: center;
+}
+.homePageImgone{
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
 .homePageImg{
     
-        /* border-radius: 50%; */
-        /* width: 30%; */
         align-items: center;
         width: 100%;
         object-fit: cover;

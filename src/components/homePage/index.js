@@ -65,6 +65,26 @@ Our dedication to excellence drives us to continuously improve our legal practic
           </div>
         </section>
 
+
+      <div>
+        
+          <div style={{padding:'2%'}} >
+          <h1>Our Partners</h1>
+            <div style={{ display: 'flex' }}>
+              {[law3, law2, law4].map((item) => {
+                return (
+                  <div className='partner-img'>
+                    <img src={item} alt="veer" className='homePageImgone'></img>
+                    <h4>Name : Veeresh S B</h4>
+                    <h4>Designation : Senior Software Developer</h4>
+
+                    </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+
         <section className="about-advocate">
           <h2>Gallery</h2>
           <div >

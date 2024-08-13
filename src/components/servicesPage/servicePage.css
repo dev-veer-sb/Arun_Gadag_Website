@@ -1,0 +1,10 @@
+.our-services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    padding: 2%;
+}
+.button{
+    background: gray;
+    color: black;
+}
