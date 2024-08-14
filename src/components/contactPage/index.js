@@ -84,7 +84,7 @@ const Contact = () => {
       <MainContentInAllPage />
 
       {/* About Contact Section */}
-      <section className="about-advocate">
+      <section className="about-advocate" data-aos="fade-up">
         <h2>Contact Us</h2>
         <p>
         Get in touch with us for expert legal advice and representation. Whether you have a question about your case, need assistance with legal documentation, or are seeking professional guidance, we are here to help. Please use the contact form below, or reach out to us directly through the provided phone number or email address. We look forward to assisting you with your legal needs and ensuring your rights are effectively protected.
@@ -133,19 +133,21 @@ const Contact = () => {
         <h1>Contact Us</h1>
       <form onSubmit={handleSubmit}>
             <div className="form-group">
-                <label for="name">Name:</label>
+                <label for="name"> <i class="fa-solid fa-user"></i> &nbsp; Name</label>
+             
                 <input type="text" id="name" name="name"  value={formData.name}  onChange={handleChange} required/>
+               
             </div>
             <div className="form-group">
-                <label for="email">Email:</label>
+                <label for="email"><i class="fa-solid fa-envelope"></i>&nbsp;Email</label>
                 <input type="email" id="email" name="email"  value={formData.email}  onChange={handleChange} required/>
             </div>
             <div className="form-group">
-                <label for="phone">Phone No:</label>
+                <label for="phone"><i class="fa-solid fa-phone"> &nbsp;</i>Phone No</label>
                 <input type="phone" id="phone" name="phone"  value={formData.phone}  onChange={handleChange} required/>
             </div>
             <div className="form-group">
-                <label for="message">Message:</label>
+                <label for="message"><i class="fa-solid fa-message"></i>&nbsp;Message</label>
                 <textarea id="message" name="message"  value={formData.message}  onChange={handleChange} required ></textarea>
             </div>
             <div className="form-group">

@@ -19,12 +19,13 @@
     }
 }
 .serviceContainers {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, -0.1);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0.1,0,0,0.1);
+    box-shadow: 0 20px 20px rgba(114, 113, 113, 0.1);
     width: 90%;
     text-align: center;
     text-decoration: solid;
+    font-weight: 600;
 }
 
