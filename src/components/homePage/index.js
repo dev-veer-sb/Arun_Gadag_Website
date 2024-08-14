@@ -18,10 +18,10 @@ const Home = () => {
     <div >
       <div>
         <MainContentInAllPage />
-        <section className="about-advocate">
+        <section className="about-advocate" data-aos="fade-up">
           <div style={{color:'black',fontFamily:'sans-serif',}}>
           <h2 style={{fontWeight:'800'}}>About Advocate</h2>
-          <p style={{fontWeight:'600'}}>
+          <p style={{fontWeight:'600'}}  >
             Established Expertise:
           </p>
           <p>

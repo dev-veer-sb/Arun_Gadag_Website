@@ -44,7 +44,7 @@ const Practice = () => {
   return (
     <div>
       <MainContentInAllPage/>
-      <section className="about-advocate">
+      <section className="about-advocate" data-aos="fade-up">
                     <h2>About Area of practice</h2>
                     <p>
                     Our legal expertise spans across a broad spectrum of practice areas, ensuring comprehensive legal solutions tailored to your unique needs. Our commitment to excellence is reflected in every case we handle, from the initial consultation to the final resolution. </p> 
@@ -52,7 +52,7 @@ const Practice = () => {
 
 <div className='serviceBody'>
                 {legalAreas.map((value)=>{
-                  return (<div className="serviceContainers">
+                  return (<div className="serviceContainers" data-aos="zoom-in-up">
 {value}
                 </div>)})}
                 </div>

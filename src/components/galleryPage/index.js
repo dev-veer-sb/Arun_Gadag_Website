@@ -48,7 +48,7 @@ const images = [
   return (
     <div>
     <MainContentInAllPage/>
-    <section className="about-advocate">
+    <section className="about-advocate" data-aos="fade-up">
     <h2>Gallery</h2>
     <p>
     Explore our gallery to see highlights of our legal practice in action. Here, you’ll find images and snapshots from various events, legal seminars, and community engagements that showcase our commitment to legal excellence and client advocacy. This gallery reflects our dedication to providing high-quality legal services and our active involvement in the legal community.

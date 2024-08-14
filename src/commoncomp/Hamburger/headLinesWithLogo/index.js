@@ -1,12 +1,36 @@
 import React,{useEffect,useState} from 'react'
 import './headLinesWithLogo.css';
 import image from '../../../images/download.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const MainContentInAllPage = () => {
 const [pageSlogan, setPageSlogan] = useState({
   slogan:'',
   color:''
 })
+
+useEffect(() => {
+  AOS.init({
+    // Global settings:
+    duration: 1600, // Animation duration
+    once: false, 
+    mirror:true,
+    mobile:false// Whether animation should happen only once - while scrolling down
+  });
+  const paragraphs = document.querySelectorAll('p');
+  const section = document.querySelectorAll('section');
+
+  paragraphs.forEach((p) => {
+    p.setAttribute('data-aos', 'fade-up');
+
+  });
+  section.forEach((s) => {
+    s.setAttribute('data-aos', 'fade-up');
+  });
+
+}, []);
 
 useEffect(() => {
   const currentPath = window.location.pathname;
@@ -52,11 +76,11 @@ useEffect(() => {
 
   return (
     <div className="content">
-                <img src={image} alt="Logo" className="image" />
-                <h1 className="centered-text">ARUN GADAG ASSOCIATES</h1>
+                <img src={image} alt="Logo" className="image" data-aos="flip-left" />
+                <h1 className="centered-text" data-aos="fade-up">ARUN GADAG ASSOCIATES</h1>
 <h2 style={{
   color:pageSlogan.color,
-}} >{pageSlogan.slogan}</h2>
+}} data-aos="fade-up" >{pageSlogan.slogan}</h2>
             </div>
   )
 }

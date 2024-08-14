@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <MainContentInAllPage/>
-      <section className="about-advocate">
+      <section className="about-advocate" data-aos="fade-up">
         <div style={{color:'black',fontFamily:'sans-serif',}}>
                     <h2 style={{fontWeight:'800'}}>About US</h2>
                     <p>

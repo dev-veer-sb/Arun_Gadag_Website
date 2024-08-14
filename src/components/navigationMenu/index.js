@@ -38,7 +38,7 @@ return (
         <div className="logo" onClick={()=>{
           handleClick()
         }}>
-        <img src={logo} alt="Logo" className="App-logo" />
+        <img src={logo} alt="Logo" className="App-logo" data-aos="fade-up" />
 
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
@@ -48,11 +48,13 @@ return (
           <ul>
             <li>
               <b>
+              <i class="fas fa-home"></i>&nbsp;
               <NavLink to="/home">HOME</NavLink>
               </b>
             </li>
             <li>
             <b>
+            <i class="fa-solid fa-address-card"></i> &nbsp;
               <NavLink to="/about">ABOUT US</NavLink>
               </b>
             </li>
@@ -60,10 +62,11 @@ return (
           className="dropdown" 
           onMouseEnter={handleMouseEnter} 
         >
-          <b>
+          <b> 
+          <i class="fa-solid fa-gavel"></i> &nbsp;
           <NavLink to="/service">SERVICES</NavLink>
           </b>
-          {isDropdownOpen && (
+          {/* {isDropdownOpen && (
             <div className="dropdown-content"  onMouseLeave={handleMouseLeave}    >
               <div className='dropdown-pages'>
               <NavLink to="/litigation">Litigation</NavLink>
@@ -75,20 +78,23 @@ return (
               <NavLink to="/realestate">Conveyancing & Real Estate</NavLink>
               </div>
             </div>
-          )}
+          )} */}
         </li>
             <li>
               <b>
+              <i class="fa-solid fa-scale-balanced"></i>&nbsp;
               <NavLink to="/practice">AREA OF PRACTICE</NavLink>
               </b>
             </li>
             <li>
               <b>
+              <i class="fa-brands fa-envira"></i>&nbsp;
               <NavLink to="/gallery">GALLERY</NavLink>
               </b>
             </li>
             <li>
               <b>
+              <i class="fa-solid fa-address-book"></i>&nbsp;
               <NavLink to="/contact">CONTACT US</NavLink>
               </b>
             </li>
