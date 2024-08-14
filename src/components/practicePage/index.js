@@ -53,7 +53,10 @@ const Practice = () => {
 <div className='serviceBody'>
                 {legalAreas.map((value)=>{
                   return (<div className="serviceContainers" data-aos="zoom-in-up">
-{value}
+                    <div className='iconPosition'>
+                    <i class="fa-regular fa-hand-point-right"></i>&nbsp;
+</div>
+ <span style={{padding:'2%'}}> {value}</span>
                 </div>)})}
                 </div>
               
