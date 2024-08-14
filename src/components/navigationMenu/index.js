@@ -7,7 +7,7 @@ import logo from '../../images/download.png';
 
 const Navigation = () => {
 const [showNavbar, setShowNavbar] = useState(false);
-const [isDropdownOpen, setDropdownOpen] = useState(false);
+const [ setDropdownOpen] = useState(false);
 const [timerId, setTimerId] = useState(null);
 const navigate = useNavigate();
 
