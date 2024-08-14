@@ -11,17 +11,17 @@ const [ setDropdownOpen] = useState(false);
 const [timerId, setTimerId] = useState(null);
 const navigate = useNavigate();
 
-const handleMouseEnter = () => {
-  setDropdownOpen(true);
-};
+// const handleMouseEnter = () => {
+//   setDropdownOpen(true);
+// };
 
-const handleMouseLeave = () => {
-  clearTimeout(timerId); // Clear any existing timer
-  const id = setTimeout(() => {
-    setDropdownOpen(false);
-  }, 200); // 300ms delay before closing
-  setTimerId(id);
-};
+// const handleMouseLeave = () => {
+//   clearTimeout(timerId); // Clear any existing timer
+//   const id = setTimeout(() => {
+//     setDropdownOpen(false);
+//   }, 200); // 300ms delay before closing
+//   setTimerId(id);
+// };
 
 
 const handleClick = () => {
@@ -60,7 +60,7 @@ return (
             </li>
             <li 
           className="dropdown" 
-          onMouseEnter={handleMouseEnter} 
+          // onMouseEnter={handleMouseEnter} 
         >
           <b> 
           <i class="fa-solid fa-gavel"></i> &nbsp;
