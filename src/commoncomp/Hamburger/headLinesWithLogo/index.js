@@ -10,14 +10,17 @@ const [pageSlogan, setPageSlogan] = useState({
   slogan:'',
   color:''
 })
+const [isVisible, setIsVisible] = useState(true);
 
 useEffect(() => {
+  
   AOS.init({
     // Global settings:
-    duration: 1600, // Animation duration
+    duration: 1500, // Animation duration
     once: false, 
     mirror:true,
-    mobile:false// Whether animation should happen only once - while scrolling down
+    mobile:false,// Whether animation should happen only once - while scrolling down
+    offset: 200,
   });
   const paragraphs = document.querySelectorAll('p');
   const section = document.querySelectorAll('section');
@@ -29,7 +32,7 @@ useEffect(() => {
   section.forEach((s) => {
     s.setAttribute('data-aos', 'fade-up');
   });
-
+  AOS.refresh();
 }, []);
 
 useEffect(() => {
@@ -70,9 +73,30 @@ useEffect(() => {
   });
   }
 
-  
-}, [])
+}, []);
 
+
+const handleScrolldown = () => {
+  // Scroll down by 100 pixels vertically
+  window.scrollBy({
+    top: 200, // Adjust this value to scroll more or less
+    left: 0,
+    behavior: 'smooth', // Smooth scrolling
+  });
+};
+const handleScroll = () => {
+  if (window.scrollY === 0) {
+    setIsVisible(true);
+  } else {
+    setIsVisible(false);
+  }
+};
+useEffect(() => {
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
 
   return (
     <div className="content">
@@ -81,6 +105,9 @@ useEffect(() => {
 <h2 style={{
   color:pageSlogan.color,
 }} data-aos="fade-up" >{pageSlogan.slogan}</h2>
+	  {isVisible && <div class="scroll"  onClick={handleScrolldown} 
+        style={{ cursor: 'pointer' }}></div>}
+
             </div>
   )
 }
